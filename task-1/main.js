@@ -14,17 +14,26 @@ const celebs = [
 // task 1
 //create a function with the "name parameter" and use the parameter to add 
 function makeLegend(name) {
+  if(typeof name !== "string") {
+    return `A legend requires a string`;
+}else{
   return `${name} is now a legend.`;
 }
-// using the make legend function create a new array tha include"is now a legend" for each item in the array
-// call the array legendaryCelebs and
+}
+  //test step 1 of the first task
+console.log(makeLegend(1));// passing a number
+console.log(makeLegend("Chirs"));// passing a string
+
+
 
 // create a new varaiable for the array(initialised variable)
 let legendaryCelebs 
 
-////using the map method on the array we create a new array 
+////using the map method on the array we create a new array... 
 ////that add the string of the makeLegend function for each name 
 legendaryCelebs = celebs.map(makeLegend)
+//test step 2 of the first task
+console.log(legendaryCelebs)
 
 
 //// Use an array method to produce a new array of all of the celebrity names 
@@ -46,6 +55,6 @@ celebs.forEach((name)=>{
 })
 
 
-
-console.log(vowelsCelebs)
+// test step 3 of the first stask
+console.log(vowelsCelebs);
 

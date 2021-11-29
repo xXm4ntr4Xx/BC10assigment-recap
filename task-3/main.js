@@ -19,7 +19,6 @@ async function getRandomCat() {
         image.setAttribute("src",`${catUrl}`);
   }
   
-  
 
 //add an event listener to call the get random cat when the button is clicked
 button.addEventListener("click", getRandomCat);

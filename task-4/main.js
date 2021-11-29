@@ -16,7 +16,6 @@ let buttonObject = document.querySelector("#buttonObject");
 //create a function so every time we write text on input fiedl...
 //..after pressing the submit button the text will be pushed into the array 
 
-
  function addToArray(){  
     importantThings.push(inputField.value) //we push the text inside the input to the array
     //for each items in the array create a list and append the list item to the order list

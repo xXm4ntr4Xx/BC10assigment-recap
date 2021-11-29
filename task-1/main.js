@@ -16,7 +16,6 @@ const celebs = [
 function makeLegend(name) {
   return `${name} is now a legend.`;
 }
-
 // using the make legend function create a new array tha include"is now a legend" for each item in the array
 // call the array legendaryCelebs and
 

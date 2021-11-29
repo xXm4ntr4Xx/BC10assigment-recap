@@ -1,0 +1,38 @@
+body{
+ background-color:rgb(255, 210, 167);
+}
+h1{
+    text-align:center;
+}
+#container-main{
+  background-color: #cccccc;
+margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+#second-block{
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+#third-block{
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#forth-block{
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+#unorder-list{
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(252, 229, 26);
+  padding: 10px;
+}

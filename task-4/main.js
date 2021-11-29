@@ -1,6 +1,6 @@
 //declare a new variable for the empty array 
 let importantThings = [];
-
+let objectCreator;
 //create a variable for the input field
 
 let inputField = document.querySelector("#important-thing");
@@ -29,30 +29,33 @@ let buttonObject = document.querySelector("#buttonObject");
 
     function addObjectToArray(){
 
-       let objectCreator = {};//create a function  where we create an empty object 
+       objectCreator = {};//create a function  where we create an empty object 
       objectCreator.text=objectInputField.value; //we set the  key pair as the result of the input value to
       objectInputField.value="";//we refresh the input text field after we click the buton
       objectCreator.priority = Math.floor(Math.random()*20);// we set the value pair as the result of  a Math.random function
-      importantThings.push(objectCreator);
-
+      importantThings.push(objectCreator);//push the object into the array
+         
+         console.log(importantThings)
     }
 
+    
 
 
-   //  function orderTheObjectByPriority(){
-   //     //method for order an object list by priority
-   //     objectCreator.sort((a,b)=>{
-   //        if(a.priority>b.priority){
-   //           return 1
-   //        }else{
-   //           return -1
-   //        }
+    function orderTheObjectByPriority(){
+       
+       //method for order an object list by priority
+        importantThings.sort((a,b)=>{
+          if(a.priority>b.priority){
+              return 1
+          }else{
+             return  -1
+          }
       
-   //    })
+         })
       
+      console.log(importantThings)
       
-      
-   //  }
+    }
 
     
 

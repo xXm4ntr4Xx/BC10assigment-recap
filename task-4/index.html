@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="/task-4/main.css">
+  </head>
   <body>
+    <div id="container-main">
     <h1>Task-4</h1>
+
+
+    <div id="second-block">
     <label>
       Important thing:
-      <input id="important-thing" type="text"/>
+      <input id="important-thing" type="text" placeholder="Text here..."/>
     </label>
     <button id="add-to-list" type="submit" onclick="addToArray()">Add To List</button>
-    <ol></ol>
+    </div>
 
+
+    <div id="unorder-list">
+    <ol></ol>
+    </div>
+
+    
+    <div id="third-block">
     <label for="">
       Priority value: 
-      <input id="priority-value" type="text">
+      <input id="priority-value" type="text" placeholder="Text here...">
     </label>
     <button id="add-object" type="submit" onclick="addObjectToArray()">add object to list</button>
+    </div>
+
 
     <br>
     <br>
     <br>
-    <label for="">
+
+
+    <div id="forth-block">
+    <label for=""> 
       Order the object:
       <button id="buttonObject"type="submit" onclick="orderTheObjectByPriority()">Sort the Object by priority</button>
-
     </label>
+    </div>
+    </div>
+
+
     <script src="main.js"></script>
   </body>
 </html>

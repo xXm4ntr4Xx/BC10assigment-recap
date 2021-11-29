@@ -17,8 +17,6 @@ let incrementParagraph = function() {
    }
 }
 
-
-
 // use the set interval set to (1000==1sec),so will repeat the operation inside the incrementParagraph every second
 let timer = setInterval(incrementParagraph, 1000)
 
